@@ -5,6 +5,11 @@
     <div class="card">
       <div class="card-content">
         <ul class="messages" v-chat-scroll>
+          <li>
+            <span class="teal-text">Admin</span>
+            <span class="grey-text text-darken-3">Hello there!</span>
+            <span class="grey-text time">Feb 14.2019 6:40</span>
+          </li>
           <li v-for="message in messages" :key="message.id">
             <div class="delMsg" @click="deleteMessage(message.id)">+</div>
             <span class="teal-text">{{message.name}}</span>
@@ -112,7 +117,7 @@ export default {
  transition: .3s ease;
 }
 
-.messages li:hover{
+.messages li:hover:not(:first-of-type){
     margin-left: 20px;
 }
 
