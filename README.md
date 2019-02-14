@@ -1,6 +1,8 @@
 # chatroom
 
-> A Vue.js project
+> A Vue.js and Firebase project
+
+<a href="https://vue-chatroom-s.firebaseapp.com">Go to ChatRoom</a>
 
 ## Build Setup
 
