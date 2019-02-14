@@ -11,7 +11,7 @@
             <span class="grey-text time">Feb 14.2019 6:40</span>
           </li>
           <li v-for="message in messages" :key="message.id">
-            <div class="delMsg" @click="deleteMessage(message.id)">+</div>
+            <i class="material-icons delMsg" @click="deleteMessage(message.id)">highlight_off</i>
             <span class="teal-text">{{message.name}}</span>
             <span class="grey-text text-darken-3">{{message.content}}</span>
             <span class="grey-text time">{{message.timestamp}}</span>
@@ -123,10 +123,9 @@ export default {
 
 .delMsg {
     position: absolute;
-    left: -13px;
-    top: 5px;
-    transform: rotate(45deg);
-    font-size: 25px;
+    left: -20px;
+    top: 15px;
+    font-size: 20px;
     cursor: pointer;
     color: red;
 }
